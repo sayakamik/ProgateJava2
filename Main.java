@@ -51,5 +51,36 @@ public class Main {
             System.out.println("凶です");
             break;
         }
+        // while文
+        int number2 = 10;
+        while(number2 > 0){
+          System.out.println(number2);
+          number2 --;
+        }
+        // for文
+        for(int i = 1; i <= 5; i++){
+          System.out.println( i+ "回目のループです");
+        }
+
+        System.out.println("=== while文 ===");
+          int k = 1;
+          while (k < 10) {
+            // iが5の倍数のとき、繰り返し処理を終了
+            if(k % 5 == 0){
+              break;
+            }
+            System.out.println(k);
+            k++;
+          }
+
+          System.out.println("=== for文 ===");
+          for (int j = 1; j < 10; j++) {
+            // jが3の倍数のとき、処理をスキップ
+            if(j % 3 == 0){
+              continue;
+            }
+            System.out.println(j);
+          }
+
     }
 }
