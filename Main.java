@@ -81,6 +81,26 @@ public class Main {
             }
             System.out.println(j);
           }
+          // 配列
+          String[] animals ={"にんじゃわんこ", "ひつじ仙人","ベイビーわんこ"};
+          // インデックス番号が0の要素を出力してください
+          System.out.println(animals[0]);
+          // インデックス番号が2の要素を出力してください
+          System.out.println(animals[2]);
+          // 上書き
+          animals[0] = "わんこ";
+          System.out.println(animals[0]);
 
+          // 配列と繰り返し
+          String[] names = {"A", "B", "C"};
+          // for文を用いて、「私の名前は◯◯です」と出力してください
+          for(int i = 0; i < names.length; i++){
+            System.out.println("私の名前は" + names[i] + "です");
+          }
+          // 拡張for分へ書き換え(こっちのほうが楽)
+          int[] ages = {27, 30, 80};
+          for(int age: ages){
+            System.out.println(age);
+          }
     }
 }
