@@ -102,5 +102,33 @@ public class Main {
           for(int age: ages){
             System.out.println(age);
           }
+
+          System.out.println("最終問題");
+           // 変数numbersに、与えられた数字の配列を代入してください
+          int[] numbers = {1, 4, 6, 9, 13, 16};
+          int oddSum = 0;
+          int evenSum = 0;
+          // for文を用いて、配列numbersの偶数の和と奇数の和を求めてください
+          for(int numb: numbers){
+            if(numb % 2 == 0){
+              evenSum += numb;
+            }else{
+              oddSum += numb;
+            }
+          }
+          System.out.println("奇数の和は" + oddSum + "です");
+          System.out.println("偶数の和は" + evenSum + "です");
+
+          for(int num = 1; num <= 30; num++){
+            if(num % 15 ==0){
+              System.out.println("FizzBuzz");
+            }else if(num % 5 == 0){
+              System.out.println("Buzz");
+            }else if(num % 3 == 0){
+              System.out.println("Fizz");
+            }else{
+              System.out.println(num);
+            }
+          }
     }
 }
